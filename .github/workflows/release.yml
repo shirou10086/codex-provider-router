@@ -61,18 +61,3 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release create "${GITHUB_REF_NAME}" dist/* --generate-notes
-
-  pypi:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: pypi
-      url: https://pypi.org/project/codex-provider-router/
-    permissions:
-      id-token: write
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: distributions
-          path: dist
-      - uses: pypa/gh-action-pypi-publish@release/v1

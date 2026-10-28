@@ -1,7 +1,7 @@
 # codex-provider-router
 
-[![PyPI](https://img.shields.io/pypi/v/codex-provider-router.svg)](https://pypi.org/project/codex-provider-router/)
-[![Python](https://img.shields.io/pypi/pyversions/codex-provider-router.svg)](https://pypi.org/project/codex-provider-router/)
+[![Latest release](https://img.shields.io/github/v/release/shirou10086/codex-provider-router)](https://github.com/shirou10086/codex-provider-router/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/shirou10086/codex-provider-router/ci.yml)](https://github.com/shirou10086/codex-provider-router/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 `codex-provider-router` is an unofficial local proxy that lets Codex switch between models from different Responses API providers without starting a new conversation.
@@ -67,10 +67,18 @@ timeout_ms = 5000
 refresh_interval_ms = 300000
 ```
 
-## Install
+## Install From GitHub
 
 ```bash
-pipx install codex-provider-router
+pipx install "git+https://github.com/shirou10086/codex-provider-router.git"
+```
+
+You can also download the wheel from the
+[latest GitHub Release](https://github.com/shirou10086/codex-provider-router/releases/latest)
+and install it directly:
+
+```bash
+pipx install codex_provider_router-0.1.1-py3-none-any.whl
 ```
 
 If your current Codex config already points to a supported custom provider, generate a router config from it and install the service:

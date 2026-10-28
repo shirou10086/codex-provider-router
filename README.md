@@ -78,7 +78,7 @@ You can also download the wheel from the
 and install it directly:
 
 ```bash
-pipx install codex_provider_router-0.1.1-py3-none-any.whl
+pipx install codex_provider_router-0.1.2-py3-none-any.whl
 ```
 
 If your current Codex config already points to a supported custom provider, generate a router config from it and install the service:

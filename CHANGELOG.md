@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Fix the Release workflow to install the package before running tests.
+- Publish the GitHub-only installation documentation and release assets.
+
 ## 0.1.1
 
 - Publish installation instructions and release artifacts through GitHub Releases only.

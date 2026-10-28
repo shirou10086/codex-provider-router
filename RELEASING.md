@@ -15,7 +15,7 @@ python3.13 -m build
 4. Push a matching tag:
 
 ```bash
-git tag v0.1.1
+git tag v0.1.2
 git push origin main --tags
 ```
 
